@@ -14,8 +14,8 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Help"
   end
 
-  test "should  get about" do
-    get static_pages_help_url
+  test "should get about" do
+    get static_pages_about_url
     assert_response :success
     assert_select "title", "About"
   end
